@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      font-size: 18px;
+      line-height: 1.6;
+      background: linear-gradient(to right, #e0f7fa, #ffffff);
+    }
+
+    p {
+      color: gray;
+      margin: 10px 0;
+    }
+
+    .highlight {
+      background-color: yellow;
+      padding: 10px;
+      border: 2px dashed #ccc;
+      border-radius: 10px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .highlight:hover {
+      transform: scale(1.05);
+      box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+    }
+
+    #intro {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    p.highlight {
+      font-style: italic;
+    }
+
+    h1, h2, #intro {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 15px;
+      background-color: #cce5ff;
+      padding: 10px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    h1:hover, h2:hover {
+      background-color: #b3d9ff;
+      transform: scale(1.05);
+    }
+
+    .info-list {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border: 2px solid #ddd;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      list-style: none;
+      transition: transform 0.3s ease;
+    }
+
+    .info-list:hover {
+      transform: scale(1.02);
+    }
+
+    .info-list li {
+      margin: 8px 0;
+      padding: 8px;
+      border-bottom: 1px solid #ccc;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .info-list li:hover {
+      background-color: #e0f7fa;
+      cursor: pointer;
+      transform: translateX(5px);
+    }
+
+    .info-list li:first-child {
+      font-weight: bold;
+      color: #0077b6;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome To My WebPage</h1>
+  <h2>I'm NAWZY</h2>
+  <p id="intro" class="highlight">This Page Indicates Brief Introduction About Me.</p>
+
+  <ul class="info-list">
+    <li><strong>Name:</strong>Yaseen Nawazish</li>
+    <li><strong>Age:</strong> 20</li>
+    <li><strong>Profession:</strong> Student</li>
+    <li><strong>Hobbies:</strong> Reading, Writing, Coding</li>
+    <li><strong>Interests:</strong> Technology, Science, Art</li>
+    <li><strong>Skills:</strong> HTML, CSS, JavaScript</li>
+    <li><strong>Future Goals:</strong> To become a Software Engineer</li>
+  </ul>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Types Of Social Media</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h2 {
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      padding: 25px;
+      flex: 1 1 calc(33.333% - 20px);
+      max-width: calc(33.333% - 20px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+      cursor: pointer;
+      border: 1px solid transparent;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+      background-color: #f9f9ff;
+      border-color: #667eea;
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      color: #444;
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+
+    .card p {
+      color: #666;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+
+    /* Responsive Breakpoints */
+    @media (max-width: 900px) {
+      .card {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Types Of Social Media</h2>
+
+  <div class="card-container">
+    <div class="card">
+      <h3>Social Networks</h3>
+      <p>These platforms primarily facilitate connecting with others, building relationships, and sharing personal updates. They often include features like profiles, news feeds, messaging, and groups.</p>
+    </div>
+    <div class="card">
+      <h3>Media Sharing Networks</h3>
+      <p>These platforms emphasize sharing visual content like photos and videos. They often include tools for editing, filters, and other creative features.</p>
+    </div>
+    <div class="card">
+      <h3>Discussion Forums</h3>
+      <p>These platforms provide a space for users to engage in conversations, ask questions, share information, and build communities around specific topics.</p>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Types Of Editing</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: sans-serif;
+      background: #f0f0f0;
+      padding: 40px 20px;
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: space-between; /* Even spacing */
+      flex-wrap: wrap;
+      gap: 20px; /* Handles spacing when wrapping */
+    }
+
+    .card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      flex: 1 1 calc(33.333% - 20px); /* Responsive 3-card layout with gap */
+      max-width: calc(33.333% - 20px);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .card p {
+      color: #555;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 900px) {
+      .card {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align: center; margin-bottom: 30px;">Types Of Editing</h2>
+
+  <div class="card-container">
+    <div class="card">
+      <h3>Developmental Editing</h3>
+      <p>Developmental editing:
+This type focuses on the overall structure, organization, and content of a piece.</p>
+    </div>
+    <div class="card">
+      <h3>Copy Editing</h3>
+      <p>Copy editing:
+This stage involves a closer look at the writing, focusing on grammar, punctuation, spelling, and style.</p>
+    </div>
+    <div class="card">
+      <h3>Proofreading</h3>
+      <p>Proofreading:
+This is the final stage of editing, focusing on catching any remaining errors in spelling, punctuation, and formatting after the content has been finalized.</p>
+    </div>
+  </div>
+
+</body>
+</html>
